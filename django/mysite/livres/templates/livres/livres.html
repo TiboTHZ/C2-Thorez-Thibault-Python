@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Liste des Livres</title>
+</head>
+<body>
+    <h1>Liste des Livres</h1>
+    <ul>
+        {% for livre in livres %}
+            <li>{{ livre.nom }} - {{ livre.auteur }} - {{ livre.date_publication }} - {{ livre.note }}</li>
+        {% endfor %}
+    </ul>
+</body>
+</html>
